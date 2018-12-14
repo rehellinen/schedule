@@ -1,13 +1,34 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main"
+    "pages/personal/main"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "日程",
+    "navigationBarTextStyle": "#FFFFFF",
+    "navigationBarBackgroundColor": "#00bcd4",
+    "backgroundColor": "#f8f8f8",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/main",
+        "iconPath": "/static/images/tab/home@noSelected.png",
+        "selectedIconPath": "/static/images/tab/home@selected.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/personal/main",
+        "iconPath": "/static/images/tab/user@noSelected.png",
+        "selectedIconPath": "/static/images/tab/user@selected.png",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": "#f9f9f9",
+    "selectedColor": "#555555",
+    "color": "#bfbfbf",
+    "borderStyle": "white"
   }
 }

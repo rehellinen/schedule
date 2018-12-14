@@ -2,15 +2,17 @@
 	"description": "项目配置文件。",
 	"setting": {
 		"urlCheck": true,
-		"es6": false,
+		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
 	"appid": "wx026b7698d91e0904",
 	"projectname": "my-project",
+	"libVersion": "2.4.2",
 	"condition": {
 		"search": {
 			"current": -1,
