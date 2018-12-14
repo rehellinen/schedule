@@ -1,11 +1,16 @@
 <template lang="pug">
-div.info
-  img.header-image(:src="top_image", @load="imageLoaded", :data-type="from")
+div.info-container
+  img.header-image(:src="top_image")
   open-data.avatar-name(type="userNickName", v-if="type === 'user'")
   open-data.avatar(type="userAvatarUrl", v-if="type === 'user'")
-  img.avatar(:src="avatar", v-if="type !== 'user'", @load="imageLoaded", :data-type="from")
+  img.avatar(:src="avatar", v-if="type !== 'user'")
   p.avatar-name(v-if="type !== 'user'") {{name}}
-  p.avatar-quote {{quote}}
+  div.info
+    div
+      p.text 关于我们
+    div
+      p.count 30
+      p.text 我的收藏
 </template>
 
 <script>
@@ -30,10 +35,6 @@ div.info
       type: {
         type: String,
         default: 'user'
-      },
-      from: {
-        type: String,
-        default: ''
       }
     }
   }
@@ -42,34 +43,43 @@ div.info
 <style scoped lang="sass" rel="stylesheet/sass">
   @import "~sass/index"
 
-  .info
+  .info-container
     display: flex
     flex-direction: column
     align-items: center
     background-color: white
     position: relative
-
-  .header-image
-    width: 750rpx
-    height: 325rpx
-
-  .avatar
-    width: 150rpx
-    height: 150rpx
-    position: absolute
-    letter-spacing: 3px
-    top: 250rpx
-    border-radius: 50%
-    display: block
-    overflow: hidden
-
-  .avatar-name
-    margin-top: 85rpx
-    color: $base-font-color
-    font-size: $biggest-font-size
-
-  .avatar-quote
-    color: $light-font-color
-    font-size: $small-font-size
-    margin: 15rpx 20rpx 20rpx 20rpx
+    .header-image
+      width: 750rpx
+      height: 325rpx
+    .avatar
+      width: 150rpx
+      height: 150rpx
+      position: absolute
+      top: 250rpx
+      border-radius: 50%
+      display: block
+      overflow: hidden
+    .avatar-name
+      margin-top: 85rpx
+      color: $base-font-color
+      letter-spacing: 2px
+      font-size: $bigger-font-size
+    .info
+      display: flex
+      width: 100%
+      justify-content: space-between
+      height: 120rpx
+      div
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 0 70rpx
+        .count
+          font-size: $normal-font-size
+        .text
+          font-size: $small-font-size
+  .desc-class
 </style>
