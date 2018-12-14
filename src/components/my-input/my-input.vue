@@ -3,22 +3,23 @@
     form(@submit="formSubmit")
       div.section
         p 输入框：
-        textarea(name="name" :value='info.name')
+        textarea(name="name" :value='info')
       div.section
         p 输入框：
-        textarea(name="number" :value='info.number')
+        textarea(name="number" :value='info')
       div.section
         p 输入框：
-        textarea(name="telephone" :value='info.telephone')
+        textarea(name="telephone" :value='info')
       div.section
         p 输入框：
-        textarea(name="weixin" :value='info.weixin')
+        textarea(name="weixin" :value='info')
       button.submit-btn(formType="submit")
         p 提交
 </template>
 
 <script>
 export default {
+
 }
 </script>
 

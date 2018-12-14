@@ -40,7 +40,7 @@ div.info
 </script>
 
 <style scoped lang="sass" rel="stylesheet/sass">
-  @import "~css/base"
+  @import "~sass/index"
 
   .info
     display: flex
@@ -57,6 +57,7 @@ div.info
     width: 150rpx
     height: 150rpx
     position: absolute
+    letter-spacing: 3px
     top: 250rpx
     border-radius: 50%
     display: block
@@ -64,11 +65,11 @@ div.info
 
   .avatar-name
     margin-top: 85rpx
-    color: $theme-color
+    color: $base-font-color
     font-size: $biggest-font-size
 
   .avatar-quote
     color: $light-font-color
-    font-size: $smaller-font-size
+    font-size: $small-font-size
     margin: 15rpx 20rpx 20rpx 20rpx
 </style>
