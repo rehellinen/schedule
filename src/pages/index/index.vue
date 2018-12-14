@@ -1,15 +1,20 @@
 <template lang="pug">
   div.container
     data-time
-    wux-button 5555
+    my-banner
+    my-input
 </template>
 
 <script>
   import dataTime from '../../components/time/time'
+  import myBanner from '../../components/my-banner/my-banner'
+  import myInput from '../../components/my-input/my-input'
 
   export default {
     components: {
-      dataTime
+      dataTime,
+      myBanner,
+      myInput
     }
   }
 </script>

@@ -40,9 +40,9 @@ export default {
         font-size: $biggest-font-size
         font-weight: bold
         letter-spacing: 3px
-        margin-left: 30rpx
+        margin-left: 50rpx
       .month-day
         font-size: $normal-font-size
-        margin-left: 10rpx
+        margin-left: 20rpx
   .de
 </style>
