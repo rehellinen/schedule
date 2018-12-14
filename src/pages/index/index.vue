@@ -1,12 +1,17 @@
 <template lang="pug">
-  div
-    wux-button 123
+  div.container
+    data-time
+    wux-button 5555
 </template>
 
 <script>
-export default {
+  import dataTime from '../../components/time/time'
 
-}
+  export default {
+    components: {
+      dataTime
+    }
+  }
 </script>
 
 <style scoped lang="sass">
