@@ -27,15 +27,19 @@ export default {
   @import "~sass/index"
 
   .form-container
-    background-color: white
+    background-color: $backgorund-color
     width: 100%
     form
       display: block
       margin-top: 20rpx
       .section
-        border-bottom: 1rpx solid $lighter-font-color
-        margin-left: 5%
-        width: 90%
+        background-color: white
+        border-radius: 10px
+        box-sizing: border-box
+        margin-top: 20rpx
+        padding: 0 20rpx
+        margin-left: 20rpx
+        width: 710rpx
         display: flex
         align-items: center
         p
