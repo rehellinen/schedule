@@ -1,17 +1,22 @@
 <template lang="pug">
   div.form-container
+    p.title 管理工作
     form(@submit="formSubmit")
       div.section
-        p 输入框：
+        p 重要而紧急的工作：
         textarea(name="name" :value='info')
       div.section
-        p 输入框：
+        p 重要而不紧急的工作：
         textarea(name="number" :value='info')
       div.section
-        p 输入框：
+        p 紧急而不重要的工作：
         textarea(name="telephone" :value='info')
       div.section
-        p 输入框：
+        p 一般的工作：
+        textarea(name="weixin" :value='info')
+      div.title-section
+        p.title 管理感悟
+      div.section.sentiment-section
         textarea(name="weixin" :value='info')
       button.submit-btn(formType="submit")
         p 提交
@@ -27,34 +32,47 @@ export default {
   @import "~sass/index"
 
   .form-container
+    display: flex
+    flex-direction: column
+    align-items: center
     background-color: $backgorund-color
     width: 100%
+    .title
+      margin: 20rpx 0
+      font-size: $normal-font-size
+      letter-spacing: 3px
     form
-      display: block
-      margin-top: 20rpx
+      .title-section
+        display: flex
+        justify-content: center
+        p
+          margin-top: 0
       .section
         background-color: white
         border-radius: 10px
         box-sizing: border-box
-        margin-top: 20rpx
+        margin-bottom: 20rpx
         padding: 0 20rpx
-        margin-left: 20rpx
         width: 710rpx
         display: flex
-        align-items: center
+        flex-direction: column
         p
-          flex-basis: 20%
           font-size: $small-font-size
           color: $base-font-color
           padding: 20rpx 0 15rpx 0
         textarea
-          height: 120rpx
+          width: 100%
+          height: 100rpx
           font-size: $small-font-size
           color: $base-font-color
-          padding: 20rpx 0 15rpx 0
+          margin: 20rpx 0
+          border-bottom: 1px solid  $lighter-font-color
+      .sentiment-section
+        textarea
+          height: 300rpx
       .submit-btn
-        width: 89%
-        margin: 50rpx 5.4%
+        width: 710rpx
+        margin: 0 auto 20rpx
         p
           font-size: $normal-font-size
           color: $base-font-color

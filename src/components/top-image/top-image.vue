@@ -7,6 +7,7 @@ div.info-container
   p.avatar-name(v-if="type !== 'user'") {{name}}
   div.info
     div
+      img(src="/static/images/icon/info.png")
       p.text 关于我们
     div
       p.count 30
@@ -69,17 +70,22 @@ div.info-container
       display: flex
       width: 100%
       justify-content: space-between
-      height: 120rpx
+      margin: 30rpx 0 15rpx 0
+      height: 90rpx
       div
         height: 100%
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: space-between
         align-items: center
         margin: 0 70rpx
+        img
+          width: 30rpx
+          height: 30rpx
         .count
           font-size: $normal-font-size
         .text
           font-size: $small-font-size
+          color: $light-font-color
   .desc-class
 </style>
