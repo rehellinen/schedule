@@ -27,7 +27,7 @@ export default {
     width: 100%
     swiper
       width: 100%
-      height: 400rpx
+      height: 500rpx
       .text
         display: flex
         justify-content: center

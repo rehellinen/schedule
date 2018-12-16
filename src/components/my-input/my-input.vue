@@ -3,15 +3,19 @@
     p.title 管理工作
     form(@submit="formSubmit")
       div.section
+        img(src="/static/images/theme/input@one.jpg" mode="aspectFill")
         p 重要而紧急的工作：
         textarea(name="name" :value='info')
       div.section
+        img(src="/static/images/theme/input@two.jpg" mode="aspectFill")
         p 重要而不紧急的工作：
-        textarea(name="number" :value='info')
+          textarea(name="number" :value='info')
       div.section
+        img(src="/static/images/theme/input@three.jpg" mode="aspectFill")
         p 紧急而不重要的工作：
         textarea(name="telephone" :value='info')
       div.section
+        img(src="/static/images/theme/input@four.jpg" mode="aspectFill")
         p 一般的工作：
         textarea(name="weixin" :value='info')
       div.title-section
@@ -53,13 +57,21 @@ export default {
         box-sizing: border-box
         margin-bottom: 20rpx
         padding: 0 20rpx
+        height: 210rpx
         width: 710rpx
         display: flex
         flex-direction: column
+        img
+          position: absolute
+          left: 20rpx
+          border-radius: 10px
+          width: 710rpx
+          height: 210rpx
         p
           font-size: $small-font-size
           color: $base-font-color
           padding: 20rpx 0 15rpx 0
+          z-index: 10
         textarea
           width: 100%
           height: 100rpx
@@ -67,6 +79,7 @@ export default {
           color: $base-font-color
           margin: 20rpx 0
           border-bottom: 1px solid  $lighter-font-color
+          z-index: 10
       .sentiment-section
         textarea
           height: 300rpx
