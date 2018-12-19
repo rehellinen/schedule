@@ -19,7 +19,7 @@ div.info-container
     props: {
       top_image: {
         type: String,
-        default: '__IMAGE__/theme/personal@header.jpg'
+        default: '/static/images/theme/personal@top.jpg'
       },
       avatar: {
         type: String,

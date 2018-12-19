@@ -1,6 +1,6 @@
 <template lang="pug">
   div.container.personal-container
-    top-image(:top_image="topImage")
+    top-image()
     collection
 </template>
 
