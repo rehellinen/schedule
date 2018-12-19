@@ -3,27 +3,27 @@
     p.title 管理工作
     form(@submit="formSubmit")
       div.section
-        img(src="/static/images/theme/input@one.jpg" mode="aspectFill")
+        <!--img(src="/static/images/theme/input@one.jpg" mode="aspectFill")-->
         p 重要而紧急的工作：
-        textarea(name="name" :value='info')
+        textarea(name="name" :value='info' maxlength="-1")
       div.section
-        img(src="/static/images/theme/input@two.jpg" mode="aspectFill")
+        <!--img(src="/static/images/theme/input@two.jpg" mode="aspectFill")-->
         p 重要而不紧急的工作：
-          textarea(name="number" :value='info')
+          textarea(name="number" :value='info' maxlength="-1")
       div.section
-        img(src="/static/images/theme/input@three.jpg" mode="aspectFill")
+        <!--img(src="/static/images/theme/input@three.jpg" mode="aspectFill")-->
         p 紧急而不重要的工作：
-        textarea(name="telephone" :value='info')
+        textarea(name="telephone" :value='info' maxlength="-1")
       div.section
-        img(src="/static/images/theme/input@four.jpg" mode="aspectFill")
+        <!--img(src="/static/images/theme/input@four.jpg" mode="aspectFill")-->
         p 一般的工作：
-        textarea(name="weixin" :value='info')
+        textarea(name="weixin" :value='info' maxlength="-1")
       div.title-section
         p.title 管理感悟
-      div.section
-        textarea(name="weixin" :value='info')
+      div.section.high-section
+        textarea(name="weixin" :value='info' maxlength="-1")
       button.submit-btn(formType="submit")
-        p 提交
+        p 保存
 </template>
 
 <script>
@@ -81,7 +81,7 @@ export default {
           margin: 20rpx 0
           border-bottom: 1px solid  $lighter-font-color
           z-index: 10
-      .section:last-child
+      .section.high-section
         height: 350rpx
         textarea
           height: 350rpx
