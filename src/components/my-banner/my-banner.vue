@@ -5,7 +5,7 @@
         div.text
           p 生活就像海洋，只有意志坚强才能达到彼岸
         div.shadow
-        img(:src="item")
+        img(:src="item" mode="aspectFill")
 </template>
 
 <script>
@@ -13,8 +13,8 @@ export default {
   data () {
     return {
       banner: [
-        'http://pic1.win4000.com/wallpaper/a/599aa3469e7d8.jpg',
-        'http://pic1.win4000.com/wallpaper/a/599aa3469e7d8.jpg'
+        '/static/images/theme/banner@spring.png',
+        '/static/images/theme/banner@spring.png'
       ]
     }
   }

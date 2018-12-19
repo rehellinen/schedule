@@ -20,7 +20,7 @@
         textarea(name="weixin" :value='info')
       div.title-section
         p.title 管理感悟
-      div.section.sentiment-section
+      div.section
         textarea(name="weixin" :value='info')
       button.submit-btn(formType="submit")
         p 提交
@@ -51,6 +51,7 @@ export default {
         justify-content: center
         p
           margin-top: 0
+
       .section
         background-color: white
         border-radius: 10px
@@ -80,9 +81,10 @@ export default {
           margin: 20rpx 0
           border-bottom: 1px solid  $lighter-font-color
           z-index: 10
-      .sentiment-section
+      .section:last-child
+        height: 350rpx
         textarea
-          height: 300rpx
+          height: 350rpx
       .submit-btn
         width: 710rpx
         margin: 0 auto 20rpx
