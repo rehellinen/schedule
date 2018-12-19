@@ -1,7 +1,7 @@
 <template lang="pug">
 div.more-container
   p {{text}}
-  img(src="static/images/icon/arrow@downBlack.png")
+  img(src="/static/images/icon/arrow@downBlack.png")
 </template>
 
 <script>
@@ -23,7 +23,7 @@ div.more-container
     justify-content: flex-end
     align-items: center
     color: $light-font-color
-    height: 80rpx
+    height: 65rpx
     background-color: white
     margin-bottom: 5rpx
     p
@@ -32,5 +32,5 @@ div.more-container
       transform: rotate(270deg)
       height: 40rpx
       width: 40rpx
-      margin-right: 5rpx
+      margin-right: 10rpx
 </style>

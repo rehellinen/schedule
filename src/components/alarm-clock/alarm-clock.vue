@@ -25,27 +25,25 @@
   @import "~sass/index"
   .clock-container
     display: flex
-    align-items: center
-    height: 120rpx
+    flex-direction: column
     padding-top: 25rpx
     .left
       display: flex
-      flex-direction: column
-      width: 120rpx
+      width: 160rpx
       align-items: center
       justify-content: center
       border-right: 1px solid $lighter-font-color
+      margin-bottom: 20rpx
       img
         width: 40rpx
         height: 40rpx
-        margin-bottom: 10rpx
       p
         font-size: $small-font-size
         color: $light-font-color
+        margin-left: 20rpx
     .reminder
       display: flex
-      flex: 1
-      padding: 0 30rpx
+      margin: 10rpx 20rpx
       .time-container
         display: flex
         align-items: baseline
